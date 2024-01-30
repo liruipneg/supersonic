@@ -20,9 +20,8 @@ public class ViewModelConfig {
 
     private List<Long> dimensions = Lists.newArrayList();
 
-    public ViewModelConfig(Long id, List<Long> dimensions, List<Long> metrics) {
+    public ViewModelConfig(Long id, boolean includesAll) {
         this.id = id;
-        this.metrics = metrics;
-        this.dimensions = dimensions;
+        this.includesAll = includesAll;
     }
 }
